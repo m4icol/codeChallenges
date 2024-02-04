@@ -18,8 +18,9 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](assets\images\image-3.png)
-![alt text](assets\images\image-4.png)
+![image](https://github.com/m4icol/codeChallenges/assets/93083280/66bf8b87-8c94-483a-ba3b-e24f8a7826c3)
+![image](https://github.com/m4icol/codeChallenges/assets/93083280/3d80af71-5868-4a9e-9952-43d98fd8851f)
+
 
 ## Autor
 
