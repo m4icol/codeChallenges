@@ -3,7 +3,6 @@
     --signUp: hsl(0, 0%, 100%);
     --button: hsl(235, 18%, 26%);
     --tomato: #ff6257;
-    --text: hsl(231, 7%, 60%);
 }
 
 * {
@@ -22,27 +21,7 @@ body {
     flex-direction: column;
 }
 
-p {
-    font-size: 0.86rem;
-    color: var(--backgroundBody);
-    line-height: 1.3rem;
-}
-
-h1 {
-    font-size: 2.9rem;
-    color: var(--backgroundBody);
-    line-height: 3rem;
-}
-
-h3 { 
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin: 1.3rem 0;
-    line-height: 1.4rem;
-    color: var(--backgroundBody);
-}
-
-.sign-up-main {
+#sign-up-main {
     border-radius: 1rem;
     margin: 3rem;
     background-color: var(--signUp);
@@ -55,7 +34,18 @@ h3 {
     margin: 0 4rem;
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 22rem;
+}
+
+h1 {
+    font-size: 2.9rem;
+}
+
+h3 { 
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 1.3rem 0;
+    line-height: 1.4rem;
 }
 
 .container-list {
@@ -73,6 +63,10 @@ h3 {
 .icon-list {
     height: 1.3rem;
     margin-right: 0.7rem;
+}
+
+.text-list {
+    font-size: 0.9rem;
 }
 
 .img-sign-up-main {
@@ -103,8 +97,12 @@ h3 {
     display: none;
 }
 
-.img-top {
-    display: none;
+.email {
+    height: 2.9rem;
+    border-radius: 0.6rem;
+    margin: 0.3rem 0 1rem 0;
+    border: #444 2px solid;
+    padding: 0.5rem 1rem;
 }
 
 .submit-form {
@@ -119,94 +117,4 @@ h3 {
 .submit-form:hover {
     background: linear-gradient(45deg, #ff537c, #ff683a);
     cursor: pointer;
-    border: none;
-}
-
-/* Page Success */
-
-.success-main {
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 3.2rem 3.8rem;
-    width: 27rem;
-    height: 28rem;
-}
-
-.icon-success {
-    width: 3.8rem;
-}
-
-.description-success {
-    width: 20rem;
-}
-
-.submit-form {
-    width: 100%;
-}
-
-/* Validation email */
-
-#user-email {
-    font-weight: 700;
-}
-
-.email {
-    color: var(--backgroundBody);
-    background: white;
-    height: 2.9rem;
-    border-radius: 0.6rem;
-    margin: 0.3rem 0 1rem 0;
-    border: #444 2px solid;
-    padding: 0.5rem 1rem;
-}
-
-.invalid-email {
-    color: #ff6257;
-    background: #ffe7e5;
-    border: #ff6257 1px solid;
-}
-
-/* Responsive Desing */
-
-@media screen and (max-width: 375px) {
-    
-    .sign-up-main {
-        width: 100vw;
-        justify-content: flex-start;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .img-top {
-        width: 100%;
-        display: block;
-    }
-
-    .img-bottom {
-        display: none;
-    }
-
-    .section1-main {
-        padding: 2rem 0.8rem;
-    }
-
-    .container-list {
-        height: auto;
-    }
-
-    /* Page Success */
-
-    .success-main {
-        padding: 3.5rem 2.3rem;
-        width: 90vw;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .description-success {
-        width: auto;
-        text-wrap: pretty;
-    }
-    
 }

@@ -16,14 +16,19 @@ function validateEmail(email) {
 
     if (regex.test(email)) {
         console.log("Correo válido");
-        emailForm.classList.remove("invalid-email");
-        localStorage.setItem('email', email);
-        window.location.href = "form-success.html";
+        labelForm.style.display = "none";
+        return true;
+
     } else {
         console.log("Correo inválido");
         labelForm.style.display = "block";
-        emailForm.classList.add("invalid-email");
+        emailForm.style.color = "#ff6257";
+        emailForm.style.background = "#ffe7e5";
+        emailForm.style.border = "#ff6257 1px solid"
         return false;
     }
+    
 }
+
+
 

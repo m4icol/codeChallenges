@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](assets\images\image-3.png)
+![alt text](assets\images\image-4.png)
 
 ## Autor
 
