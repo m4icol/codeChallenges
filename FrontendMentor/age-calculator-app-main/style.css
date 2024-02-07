@@ -1,0 +1,24 @@
+:root {
+
+ --PrimaryPurple: hsl(259, 100%, 65%);
+ --PrimaryRed: hsl(0, 100%, 67%);
+ --OffWhite: hsl(0, 0%, 94%);
+ --OffGrey: hsl(0, 0%, 86%);
+ --SGrey: hsl(0, 1%, 44%);
+ --OffBlack: hsl(0, 0%, 8%);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--OffGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
