@@ -9,7 +9,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -20,32 +20,52 @@
 
     <div class="prompt-age-container">
 
-      <form action="label">
-        <label for="input-day">DAY</label>
-        <input id="input-day" class="select-day" type="number" placeholder="DD"/>
+      <form action="label" class="form-day label-form">
+        <label for="input-day" class="label-text">DAY</label>
+        <input id="input-day" class="select-day select-date" type="number" placeholder="DD"/>
       </form>
 
-      <form action="label">
-        <label for="input-month">MONTH</label>
-        <input id="input-month" class="select-month" type="number" placeholder="MM"/>
+      <form action="label" class="form-month label-form">
+        <label for="input-month" class="label-text">MONTH</label>
+        <input id="input-month" class="select-month select-date" type="number" placeholder="MM"/>
       </form>
 
-      <form action="label">
-        <label for="input-year">YEAR</label>
-        <input id="input-year" class="select-year" type="number" placeholder="YYYY"/>
+      <form action="label" class="form-year label-form">
+        <label for="input-year" class="label-text">YEAR</label>
+        <input id="input-year" class="select-year select-date" type="number" placeholder="YYYY"/>
       </form>
 
     </div>
 
     <div class="divider-container">
 
+      <div class="divider"></div>
+      <button type="submit" class="submit-container">
+        <img src="assets\images\icon-arrow.svg" alt="submit" class="submit-img">
+      </button>
+
     </div>
 
-    <div class="age-calc-result">
+    <div class="calc-result-container">
+
+      <div class="calc-years calc-result">
+        <h2 class="result-years result">38</h2>
+        <h2 class="calc-text">years</h2>
+      </div>
+
+      <div class="calc-month calc-result">
+        <h2 class="result-month result">3</h2>
+        <h2 class="calc-text">months</h2>
+      </div>
+
+      <div class="calc-day calc-result">
+        <h2 class="result-day result">26</h2>
+        <h2 class="calc-text">days</h2>
+      </div>
 
     </div>
-
   </main>
-  
+
+  <script src="index.js"></script>
 </body>
 </html>

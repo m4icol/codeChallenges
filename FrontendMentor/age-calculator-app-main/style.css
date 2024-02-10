@@ -17,8 +17,81 @@
 }
 
 body {
-    background-color: var(--OffGrey);
+    background-color: var(--OffWhite);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    margin-right: 0.5rem;
+    font-size: 4.0rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 4.6rem;
+}
+
+.age-calc-main {
+    background-color: white;
+    border-radius: 1rem 1rem 8rem 1rem;
+    padding: 2rem;
+}
+
+.prompt-age-container, .calc-result {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-form, .calc-result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    font-weight: 700;
+    font-size: 0.67rem;
+    letter-spacing: .1rem;
+    color: var(--SGrey);
+    margin: 0 0rem 0.5rem 0.2rem;
+}
+
+.select-date {
+    padding: 0.42rem 0.75rem;
+    border-radius: 0.4rem;
+    border: 1px var(--OffGrey) solid;
+    margin: 0 0.8rem 0 0;
+    width: 7rem;
+    font-size: 1.22rem;
+}
+
+.divider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divider {
+    width: 26.5rem; 
+    height: 0.124rem; 
+    background-color: var(--OffGrey); 
+}
+
+.submit-container {
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--PrimaryPurple);
+    border: none;
+    cursor: pointer;
+}
+
+.submit-img {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.result {
+    color: var(--PrimaryPurple);
 }
