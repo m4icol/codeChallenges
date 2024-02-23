@@ -1,0 +1,347 @@
+:root {
+    --primary-orange: hsl(35, 77%, 62%);
+    --primary-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    padding: 2rem 8rem;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "article article aside"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+}
+
+h1 {
+    color: var(--Very-dark-blue);
+    font-size: 3.1rem;
+    font-weight: 900;
+    line-height: 3.4rem;
+    width: 20rem;
+    grid-area: title;
+}
+
+h2 {
+    color: var(--primary-orange);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--Off-white);
+    cursor: pointer;
+}
+
+h3:hover {
+    color: var(--primary-orange);
+}
+
+h4 { 
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+h4:hover {
+    color: var(--primary-red);
+}
+
+/* Header */
+
+.header-container {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.img-article {
+    object-fit: cover;
+    height: 17rem;
+}
+
+.svg-logo {
+    object-fit: cover;
+    height: 1.8rem;
+    width: 2.9rem;
+}
+
+.menu-container {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.item {
+    list-style: none;
+    margin: 0 1.3rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: var(--primary-red);
+}
+
+.menu-responsive, .menu-responsive-close {
+    display: none;
+}
+
+/* Main */
+
+.article-main {
+    gap: 1.4rem 2rem;
+    grid-area: article;
+    display: grid;
+    grid-template-areas:
+        "img img"
+        "title text";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 14.5rem auto;
+}
+
+.img-article {
+    grid-area: img;
+    width: 100%;
+    height: 14.5rem;
+}
+
+.img-article-movil {
+    display: none;
+}
+
+.article-subsection {
+    grid-area: text;
+}
+
+.article-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--Dark-blue);
+}
+
+.article-button {
+    color: var(--Off-white);
+    background-color: var(--primary-red);
+    border: none;
+    margin-top: 1.8rem;
+    font-size: 0.75rem;
+    padding: 0.85rem 1.6rem;
+    letter-spacing: 0.35rem;
+    cursor: pointer;
+}
+
+.article-button:hover {
+    background-color: var(--Very-dark-blue);
+}
+
+/* Aside */
+
+.news-container {
+    grid-area: aside;
+    background-color: var(--Very-dark-blue);
+    display: grid;
+    grid-template-rows: 2rem 5rem 0 5rem 0 5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.divider {
+    height: .13rem;
+    background-color: var(--Dark-blue);
+}
+
+.news-text {
+    margin-top: 0.7rem;
+    color: var(--Grayish-blue);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* Footer */
+
+.popular-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: footer; 
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.popular-article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.popular-img {
+    width: 6.5rem;
+    height: auto;
+}
+
+.popular-number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+}
+
+.popular-text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: var(--Dark-blue);
+}
+
+@media screen and (max-width: 765px) {
+    
+    body {
+        justify-content: center;
+        padding: 3rem 2rem;
+        grid-template-areas: 
+        "header"
+        "article"
+        "aside"
+        "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 3rem;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 800;  
+    }
+
+    /* Header */
+
+    .header-container {
+        grid-template-columns: 6fr 1fr;
+    }
+
+    .menu-responsive, .menu-responsive-close {
+        display: block;
+        border: none;
+        background: white;
+        cursor: pointer;
+    }
+
+    .menu-container {
+        opacity: 0;
+        visibility: hidden;
+        display: grid;
+        gap: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: start;
+    }
+
+    .menu-container.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .item {
+        font-size: 1.2rem;
+    }
+
+    /* Main */
+
+    .article-main {
+        gap: 2rem;
+        grid-area: article;
+        grid-template-areas:
+            "img"
+            "title"
+            "text";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .img-article {
+        display: none;
+    }
+
+    .img-article-movil {
+        display: block;
+        width: 90vw;
+    }
+
+    .article-text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        width: 85%;
+    }
+
+    .article-button {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 1rem 2.5rem;
+    }
+
+    /* Aside */
+
+    .news-container {
+        width: 90vw;
+    }
+
+    .news-text {
+        font-size: 1.05rem;
+    }
+
+    /* Footer */
+
+    .popular-container {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-text {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
