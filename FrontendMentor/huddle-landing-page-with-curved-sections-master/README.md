@@ -15,6 +15,8 @@ Your users should be able to:
 
 ### Screenshot
 
+![image](https://github.com/m4icol/codeChallenges/assets/93083280/1a347084-3db5-4f16-b87a-5520c10c2118)
+
 ## Autor
 
 - Frontend Mentor: Maickol Rivera
