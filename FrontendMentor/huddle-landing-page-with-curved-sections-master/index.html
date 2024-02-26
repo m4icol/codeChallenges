@@ -15,13 +15,15 @@
 
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
-  <body class="flex flex-col items-center mt-10">
+  <body>
     <!-- Header -->
 
-    <header class="flex flex-row w-full justify-between px-40">
-      <img class="w-48 h-8" src="images/logo.svg" alt="Image logo" />
+    <header
+      class="flex items-center justify-between p-8 max-w-6xl mx-auto mt-4"
+    >
+      <img class="w-32 lg:w-auto" src="images/logo.svg" alt="Image logo" />
       <button
-        class="text-CS-Pink px-5 py-1 border-2 border-CS-Pink rounded-full hover:text-CS-Light-Pink hover:border-CS-Light-Pink"
+        class="min-w-28 text-CS-Pink px-5 py-1 border-2 border-CS-Pink rounded-full hover:text-CS-Light-Pink hover:border-CS-Light-Pink lg:text-base"
       >
         Try it free
       </button>
@@ -29,38 +31,42 @@
 
     <!-- Main -->
 
-    <main class="flex flex-col w-full mt-32 gap-y-10">
+    <main class="flex flex-col w-full mt-1 lg:mt-32 gap-y-10">
       <!-- Hero Content -->
 
-      <section class="flex flex-col px-40 w-full items-center gap-20">
+      <section class="flex flex-col p-8 max-w-6xl mx-auto items-center gap-20">
         <div class="flex flex-col w-full items-center gap-7">
           <h1
-            class="font-header font-bold text-center text-4xl text-CS-Dark-Cyan"
+            class="font-header font-bold text-center text-2xl text-CS-Dark-Cyan lg:text-4xl"
           >
             Build The Community Your Fans Will Love
           </h1>
-          <p class="max-w-lg text-center font-body font-medium">
+          <p
+            class="max-w-72 text-center font-body font-medium text-xs lg:max-w-lg lg:text-base"
+          >
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audie nce. Create connections with your users as
             you engage in genuine discussion.
           </p>
 
           <button
-            class="text-white font-body font-medium bg-CS-Pink rounded-full px-20 py-4 hover:bg-CS-Light-Pink"
+            class="text-white font-body font-semibold shadow bg-CS-Pink rounded-full px-4 py-3 hover:bg-CS-Light-Pink w:1/3 lg:w-1/4 text-sm lg:text-base lg:py-4"
           >
             Get Started For Free
           </button>
         </div>
 
         <img
-          class="w-3/5"
+          class="w-11/12 lg:w-3/4"
           src="images/screen-mockups.svg"
           alt="screen-mockups"
         />
 
         <!-- Data hero -->
 
-        <div class="flex flex-row w-full justify-evenly">
+        <div
+          class="flex flex-col w-full sm:flex-row sm:gap-x-64 justify-center items-center gap-10"
+        >
           <div class="flex flex-col gap-2">
             <img
               class="w-7 h-6"
@@ -89,49 +95,63 @@
 
       <!-- Section illustrations -->
 
-      <section class="flex flex-col gap-36">
+      <section class="flex flex-col lg:gap-y-10">
         <!-- Grow Together -->
 
         <div>
           <img class="w-full" src="images/bg-section-top-desktop-1.svg" />
           <div
-            class="bg-CS-Pale-Blue flex flex-row justify-evenly items-center py-5"
+            class="bg-CS-Pale-Blue flex flex-col items-center py-20 gap-10 lg:flex-row-reverse justify-center lg:gap-x-40"
           >
-            <div class="flex flex-col w-1/3 gap-5 ml-5">
-              <h4 class="text-CS-Dark-Cyan font-extrabold font-body text-3xl">
+            <img
+              class="max-w-56"
+              src="images/illustration-grow-together.svg"
+              alt="illustration-grow-together"
+            />
+            <div
+              class="flex flex-col items-center gap-5 px-12 lg:w-1/3 lg:items-start lg:px-0"
+            >
+              <h4
+                class="text-CS-Dark-Cyan font-extrabold font-body text-xl lg:text-2xl"
+              >
                 Grow Together
               </h4>
-              <p class="font-body">
+              <p
+                class="text-center font-body font-medium text-xs lg:text-start lg:text-sm"
+              >
                 Generate meaningful discussions with your audience and build a
                 strong, loyal community. Think of the insightful conversation
                 you miss out on feedback form.
               </p>
             </div>
-            <img
-              class="w-96"
-              src="images/illustration-grow-together.svg"
-              alt="illustration-grow-together"
-            />
           </div>
           <img class="w-full" src="images/bg-section-bottom-desktop-1.svg" />
         </div>
 
         <!-- Flowing Conversation -->
 
-        <div class="flex flex-row justify-evenly items-center">
+        <div
+          class="flex flex-col items-center py-20 gap-10 lg:flex-row justify-center lg:gap-x-40"
+        >
           <img
-            class="w-96"
+            class="max-w-56"
             src="images/illustration-flowing-conversation.svg"
             alt="illustration-flowing-conversation"
           />
-          <div class="flex flex-col w-2/5 gap-5">
-            <h4 class="text-CS-Dark-Cyan font-extrabold font-body text-3xl">
-              Flowing Conversations
+          <div
+            class="flex flex-col items-center gap-5 px-12 lg:w-1/3 lg:items-start lg:px-0"
+          >
+            <h4
+              class="text-CS-Dark-Cyan font-extrabold font-body text-xl lg:text-2xl"
+            >
+              Grow Together
             </h4>
-            <p class="font-body">
-              You wouldn't paginate a conversation in real life, so why do it
-              online? Our threads have just-in-time loading for a more natural
-              flow.
+            <p
+              class="text-center font-body font-medium text-xs lg:text-start lg:text-sm"
+            >
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversation you
+              miss out on feedback form.
             </p>
           </div>
         </div>
@@ -141,37 +161,43 @@
         <div>
           <img class="w-full" src="images/bg-section-top-desktop-2.svg" />
           <div
-            class="bg-CS-Pale-Blue flex flex-row justify-evenly items-center py-5"
+            class="bg-CS-Pale-Blue flex flex-col items-center py-20 gap-10 lg:flex-row-reverse justify-center lg:gap-x-40"
           >
-            <div class="flex flex-col w-1/3 gap-5 ml-5 my-20">
-              <h4 class="text-CS-Dark-Cyan font-extrabold font-body text-3xl">
+            <img
+              class="max-w-56"
+              src="images/illustration-your-users.svg"
+              alt="illustration-grow-together"
+            />
+            <div
+              class="flex flex-col items-center gap-5 px-12 lg:w-1/3 lg:items-start lg:px-0"
+            >
+              <h4
+                class="text-CS-Dark-Cyan font-extrabold font-body text-xl lg:text-2xl"
+              >
                 Your Users
               </h4>
-              <p class="font-body">
+              <p
+                class="text-center font-body font-medium text-xs lg:text-start lg:text-sm"
+              >
                 It takes no time at all to integrate Huddle with your app's
                 authentication solution. This means, once signed in to your app,
                 your users can start chatting immediately.
               </p>
             </div>
-            <img
-              class="w-96"
-              src="images/illustration-grow-together.svg"
-              alt="illustration-grow-together"
-            />
           </div>
           <img class="w-full" src="images/bg-section-bottom-desktop-2.svg" />
         </div>
 
         <!-- Ready To Build -->
 
-        <div class="flex flex-col items-center gap-7">
+        <div class="flex flex-col items-center gap-7 py-20 lg:py-32">
           <h2
-            class="font-header font-bold text-center text-4xl text-CS-Dark-Cyan"
+            class="font-header font-bold text-center text-2xl text-CS-Dark-Cyan lg:text-4xl px-5"
           >
             Ready To Build Your Community?
           </h2>
           <button
-            class="text-white font-body font-medium bg-CS-Pink rounded-full px-20 py-4 shadow-2xl hover:bg-CS-Light-Pink"
+            class="text-white font-body font-semibold shadow bg-CS-Pink rounded-full px-4 py-3 hover:bg-CS-Light-Pink w:1/3 lg:w-1/4 text-sm lg:text-base lg:py-4"
           >
             Get Started For Free
           </button>
@@ -181,10 +207,37 @@
 
         <div>
           <img class="w-full" src="images/bg-footer-top-desktop.svg" />
-          <div class="bg-CS-Dark-Cyan flex flex-row justify-evenly py-24">
-            <div class="flex flex-col w-1/4 gap-5">
-              <img class="w-56" src="images/icon-footer.svg" />
-              <p class="font-body text-white">
+          <div
+            class="bg-CS-Dark-Cyan flex flex-col items-center py-24 px-14 gap-y-14 lg:flex-row-reverse lg:justify-evenly"
+          >
+            <div class="flex flex-col gap-5 lg:w-1/3">
+              <h5 class="text-white font-body text-xl font-bold">NEWLETTER</h5>
+              <p class="text-white font-body font-medium text-sm">
+                To recieve tips on how to grow your community, sign up to weekly
+                newsleet. We'll never send you spam or pass on your email
+                address
+              </p>
+              <div class="flex flex-col gap-4 mt-2 lg:flex-row">
+                <input
+                  id="formEmail"
+                  class="font-body py-2 px-4 rounded-lg"
+                  type="email"
+                />
+                <button
+                  id="formSubmit"
+                  class="bg-CS-Pink text-white font-body rounded-md py-2 px-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <p id="formText" class="text-CS-Light-Red font-body hidden">
+                Invalid Email
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-7 lg:w-1/3">
+              <img class="w-36" src="images/icon-footer.svg" />
+              <p class="font-body text-white font-medium text-sm">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mauris
                 nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
               </p>
@@ -197,29 +250,11 @@
                 <p class="text-white font-body">example@hunddle.com</p>
               </div>
             </div>
-
-            <div class="flex flex-col w-1/4 gap-7">
-              <h5 class="text-white font-body text-xl font-bold">NEWLETTER</h5>
-              <p class="text-white font-body">
-                To recieve tips on how to grow your community, sign up to weekly
-                newsleet. We'll never send you spam or pass on your email
-                address
-              </p>
-              <div class="flex gap-4 mt-2">
-                <input
-                  class="font-body py-2 px-4 w-60 rounded-lg"
-                  type="text"
-                />
-                <button
-                  class="bg-CS-Pink text-white font-body rounded-md py-2 px-5"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
     </main>
   </body>
+
+  <script src="index.js"></script>
 </html>
